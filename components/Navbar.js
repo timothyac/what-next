@@ -1,40 +1,49 @@
 import Link from "next/link";
+import Icon from "./Icon";
 
 const Navbar = () => (
-  <div className="container pt flex-center ">
-    <ul>
-      <li>
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-      </li>
-      <li>
-        <Link href="/about">
-          <a>About</a>
-        </Link>
-      </li>
-      <li>
-        <Link href="/submit">
-          <a>Submit</a>
-        </Link>
-      </li>
-      <li>
-        <a
-          href="https://github.com/SunstroUS/what-next"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Github
-        </a>
-      </li>
-    </ul>
+  <div className="container pt nav-grid">
+    <Icon />
+    <div className="nav-flex-center">
+      <ul>
+        <li>
+          <Link href="/">
+            <a>Home</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/about">
+            <a>About</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/submit">
+            <a>Submit</a>
+          </Link>
+        </li>
+        <li>
+          <a
+            href="https://github.com/SunstroUS/what-next"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+        </li>
+      </ul>
+    </div>
 
     <style jsx>{`
       .pt {
         padding-top: 30px;
       }
 
-      .flex-center {
+      .nav-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      .nav-flex-center {
         display: flex;
         justify-content: center;
       }
