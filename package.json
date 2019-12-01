@@ -1,15 +1,12 @@
 {
-  "name": "first-next-project",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "what-next",
+  "description": "Project to help developers generate new ideas for projects",
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start"
   },
-  "keywords": [],
-  "author": "",
+  "author": "sunstrous",
   "license": "ISC",
   "dependencies": {
     "next": "^9.1.4",
