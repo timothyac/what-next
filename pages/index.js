@@ -4,22 +4,22 @@ import Idea from "../components/Idea";
 
 const array = [
   {
-    name: "project generator"
+    name: "project generator",
+    description:
+      "Generate random projects for people who can't think of projects to start."
   },
   {
-    name: "short-cut generator"
+    name: "short-cut generator",
+    description: "Generate random short-cuts based on cut."
   },
   {
-    name: "short generator"
+    name: "generator generator",
+    description:
+      "Generate a random generator so that you can generate new generators"
   },
   {
-    name: "cut generator"
-  },
-  {
-    name: "generator generator"
-  },
-  {
-    name: "number generator"
+    name: "Number generator",
+    description: "Generate random numbers based on nothing."
   }
 ];
 

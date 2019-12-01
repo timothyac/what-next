@@ -1,10 +1,11 @@
 const Idea = props => {
-  let { name } = props.idea;
+  let { name, description } = props.idea;
 
   return (
     <div>
       <div className="card">
-        <p>{name}</p>
+        <h1>{name}</h1>
+        <p>{description}</p>
       </div>
 
       <style jsx>{`
