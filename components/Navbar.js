@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const Navbar = () => (
-  <div>
+  <div className="container pt flex-center ">
     <ul>
       <li>
         <Link href="/">
@@ -13,23 +13,52 @@ const Navbar = () => (
           <a>About</a>
         </Link>
       </li>
+      <li>
+        <Link href="/submit">
+          <a>Submit</a>
+        </Link>
+      </li>
+      <li>
+        <a
+          href="https://github.com/SunstroUS/what-next"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Github
+        </a>
+      </li>
     </ul>
 
     <style jsx>{`
+      .pt {
+        padding-top: 30px;
+      }
+
+      .flex-center {
+        display: flex;
+        justify-content: center;
+      }
+
       ul {
         margin: 0px;
+        padding: 0px;
         list-style: none;
         display: flex;
       }
 
       ul li {
-        font-size: 18px;
-        margin-right: 20px;
+        font-size: 14px;
+        margin-right: 30px;
       }
 
       ul li a {
-        color: #fff;
+        color: rgb(153, 153, 153);
         text-decoration: none;
+      }
+
+      ul li a:hover {
+        color: #fff;
+        transition: color 0.2s ease;
       }
     `}</style>
   </div>
