@@ -60,7 +60,10 @@ export default class Index extends React.Component {
       <Layout>
         <div>
           <h1>What Next?</h1>
-          <p>Press space to generate a new project idea!</p>
+          <p>
+            Press <span className="highlight">space</span> to generate a new
+            project idea!
+          </p>
           <Idea idea={this.state.idea} />
         </div>
       </Layout>
