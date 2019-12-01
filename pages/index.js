@@ -52,7 +52,7 @@ export default class Index extends React.Component {
 
   componentWillUnmount() {
     // Remove event listener
-    document.removeEventListener("keydown");
+    document.removeEventListener("keydown", this.catchSpaceButton, false);
   }
 
   render() {
