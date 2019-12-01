@@ -17,8 +17,7 @@ const Navbar = () => (
 
     <style jsx>{`
       ul {
-        background: #333;
-        color: #fff;
+        margin: 0px;
         list-style: none;
         display: flex;
       }
