@@ -14,7 +14,7 @@ const Layout = props => (
         padding: 0;
         height: 100vh;
         font-size: 18px;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 1.8;
         background-color: #000;
         color: #fff;
@@ -25,10 +25,15 @@ const Layout = props => (
 
       h1 {
         font-weight: 700;
+        margin: 0px;
       }
 
       p {
+        margin: 0px;
         margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 24px;
+        rgb(204, 204, 204);
       }
 
       .container {
@@ -38,6 +43,15 @@ const Layout = props => (
         padding-right: 10px;
         padding-left: 10px;
       }
+
+      .highlight {
+        color: #F9C80E;
+      }
+      
+      ::selection {
+        background-color: #7a43a8;
+        color: #fff;
+    }
     `}</style>
   </div>
 );
