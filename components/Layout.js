@@ -33,7 +33,7 @@ const Layout = props => (
         margin-bottom: 10px;
         font-size: 14px;
         line-height: 24px;
-        rgb(204, 204, 204);
+        color: rgb(204, 204, 204);
       }
 
       .container {
@@ -45,13 +45,13 @@ const Layout = props => (
       }
 
       .highlight {
-        color: #F9C80E;
+        color: #f9c80e;
       }
-      
+
       ::selection {
         background-color: #7a43a8;
         color: #fff;
-    }
+      }
     `}</style>
   </div>
 );

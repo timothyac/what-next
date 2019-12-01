@@ -16,7 +16,6 @@ const Idea = props => {
         }
 
         .card:hover {
-          cursor: pointer;
           transition: border 0.2s ease 0s;
           border: 2px solid #fff;
         }
