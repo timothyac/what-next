@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Icon from "./Icon";
+import NavLink from "./NavLink";
 
 const Navbar = () => (
   <div className="container pt nav-grid">
@@ -7,19 +8,13 @@ const Navbar = () => (
     <div className="nav-flex-center">
       <ul>
         <li>
-          <Link href="/">
-            <a>Home</a>
-          </Link>
+          <NavLink href="/">Home</NavLink>
         </li>
         <li>
-          <Link href="/about">
-            <a>About</a>
-          </Link>
+          <NavLink href="/about">About</NavLink>
         </li>
         <li>
-          <Link href="/submit">
-            <a>Submit</a>
-          </Link>
+          <NavLink href="/submit">Submit</NavLink>
         </li>
         <li>
           <a
