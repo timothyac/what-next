@@ -29,10 +29,6 @@ const Navbar = () => (
     </div>
 
     <style jsx>{`
-      .pt {
-        padding-top: 30px;
-      }
-
       .nav-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

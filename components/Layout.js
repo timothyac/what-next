@@ -44,6 +44,10 @@ const Layout = props => (
         padding-left: 10px;
       }
 
+      .pt {
+        padding-top: 30px;
+      }
+
       .highlight {
         color: #f9c80e;
       }

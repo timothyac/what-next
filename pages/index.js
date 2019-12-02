@@ -58,7 +58,7 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <div>
+        <div className="pt">
           <h1>What Next?</h1>
           <p>
             Press <span className="highlight">space</span> to generate a new
