@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Helmet from "./Helmet";
 import Navbar from "./Navbar";
 
 const Layout = props => (
@@ -6,6 +7,7 @@ const Layout = props => (
     <Head>
       <title>What Next?</title>
     </Head>
+    <Helmet />
     <Navbar />
     <div className="container">{props.children}</div>
     <style jsx global>{`
