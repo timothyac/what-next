@@ -8,22 +8,26 @@ const about = () => (
         As a younger developer, I often struggle between wanting to do cool
         things but not having the creativity to match it. It's easy to watch 'x'
         tutorial on youtube or follow a new technology's documentation. The hard
-        part comes when you actually want to do something more than a to-do app.
+        part comes when you actually want to
+        <span className="purple"> do something more than a to-do app</span>.
         Best example is this site itself. I had wanted to learn Next.js for a
         while, but didn't know what project to start. Luckily I figured, why not
-        make a web app that generates ideas for you!
+        make a
+        <span className="cyan"> web app that generates ideas for you</span>!
       </p>
       <br />
       <h1>Under the hood</h1>
       <p>
         This site is still in the early stages, so I'm still very open to trying
         and learning new things. Core part of this project was to help me learn
-        Next.js, a backend javascript framework that renders react on the server
-        rather than the client. I also plan to integrate AWS for storing the
-        ideas. More specifically, I will use DynamoDB, Lambda functions, and API
-        Gateway. Also need to consider how I'm going to approach the submittal
-        process. I'd love for ideas to be submitted. No matter what, this will
-        always be open-source, under a MIT license.
+        <span className="pink"> Next.js</span>, a backend javascript framework
+        that renders react on the server rather than the client. I also plan to
+        integrate<span className="orange"> AWS</span> for storing the ideas.
+        More specifically, I will use DynamoDB, Lambda functions, and API
+        Gateway . Also need to consider how I'm going to approach the submittal
+        process. I'd love for ideas to be submitted. No matter what,
+        <span className="cyan"> this will always be open-source</span>, under a
+        MIT license.
       </p>
       <br />
       <h1>Want to contribute?</h1>
@@ -33,6 +37,27 @@ const about = () => (
         submittal, but I do plan to add that at some point.
       </p>
     </div>
+    <style jsx>{`
+      .cyan {
+        color: #79ffe1;
+      }
+
+      .blue {
+        color: #0070f3;
+      }
+
+      .pink {
+        color: #f81ce5;
+      }
+
+      .purple {
+        color: #7928ca;
+      }
+
+      .orange {
+        color: #f5a623;
+      }
+    `}</style>
   </Layout>
 );
 
