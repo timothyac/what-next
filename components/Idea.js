@@ -3,19 +3,20 @@ const Idea = props => {
 
   return (
     <div>
-      <div className="card">
+      <div className="idea">
         <h1>{name}</h1>
         <p>{description}</p>
       </div>
 
       <style jsx>{`
-        .card {
+        .idea {
+          margin-top: 2rem;
           border: 2px solid rgb(51, 51, 51);
           border-radius: 10px;
           padding: 2rem;
         }
 
-        .card:hover {
+        .idea:hover {
           transition: border 0.2s ease 0s;
           border: 2px solid #fff;
         }

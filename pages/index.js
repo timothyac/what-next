@@ -1,50 +1,45 @@
 import React from "react";
+import Axios from "axios";
 import Layout from "../components/Layout";
 import Idea from "../components/Idea";
 
-const array = [
-  {
-    name: "project generator",
-    description:
-      "Generate random projects for people who can't think of projects to start."
-  },
-  {
-    name: "short-cut generator",
-    description: "Generate random short-cuts based on cut."
-  },
-  {
-    name: "generator generator",
-    description:
-      "Generate a random generator so that you can generate new generators"
-  },
-  {
-    name: "Number generator",
-    description: "Generate random numbers based on nothing."
-  }
-];
-
-// Generates new ideas
-const generateNewIdea = () => {
-  let numberOfIdeas = array.length;
-  let randomIdea = Math.floor(Math.random() * numberOfIdeas);
-  return array[randomIdea];
-};
-
 export default class Index extends React.Component {
   state = {
+    ideas: [],
     idea: {
-      name: "test"
+      name: "loading.."
     }
   };
 
   // Catches use pressing space bar button
   catchSpaceButton = event => {
-    if (event.keyCode === 32) this.setState({ idea: generateNewIdea() });
+    if (event.keyCode === 32) this.setState({ idea: this.generateNewIdea() });
+  };
+
+  // Generates new ideas
+  generateNewIdea = () => {
+    let ideas = this.state.ideas;
+    let numberOfIdeas = ideas.length;
+    let randomIdea = Math.floor(Math.random() * numberOfIdeas);
+    return ideas[randomIdea];
+  };
+
+  fetchIdeas = async () => {
+    //https://m9yoh7rz1m.execute-api.us-east-1.amazonaws.com/prod
+
+    try {
+      const res = await Axios.get(
+        "https://m9yoh7rz1m.execute-api.us-east-1.amazonaws.com/prod/ideas"
+      );
+      await this.setState({ ideas: res.data });
+      await this.setState({ idea: this.generateNewIdea() });
+    } catch (error) {
+      console.warn(`An error has occured ${error}`);
+    }
   };
 
   componentDidMount() {
-    // Generate new idea on mount
-    this.setState({ idea: generateNewIdea() });
+    this.fetchIdeas();
 
     // Listen for keydown events
     document.addEventListener("keydown", this.catchSpaceButton, false);
