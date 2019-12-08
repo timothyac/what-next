@@ -2,6 +2,7 @@ import React from "react";
 import Axios from "axios";
 import Layout from "../components/Layout";
 import Idea from "../components/Idea";
+import NewIdeaBtn from "../components/NewIdeaBtn";
 
 export default class Index extends React.Component {
   state = {
@@ -13,7 +14,7 @@ export default class Index extends React.Component {
 
   // Catches use pressing space bar button
   catchSpaceButton = event => {
-    if (event.keyCode === 32) this.setState({ idea: this.generateNewIdea() });
+    if (event.keyCode === 32) this.generateNewIdea();
   };
 
   // Generates new ideas
@@ -21,7 +22,7 @@ export default class Index extends React.Component {
     let ideas = this.state.ideas;
     let numberOfIdeas = ideas.length;
     let randomIdea = Math.floor(Math.random() * numberOfIdeas);
-    return ideas[randomIdea];
+    this.setState({ idea: ideas[randomIdea] });
   };
 
   fetchIdeas = async () => {
@@ -32,7 +33,7 @@ export default class Index extends React.Component {
         "https://m9yoh7rz1m.execute-api.us-east-1.amazonaws.com/prod/ideas"
       );
       await this.setState({ ideas: res.data });
-      await this.setState({ idea: this.generateNewIdea() });
+      await this.generateNewIdea();
     } catch (error) {
       console.warn(`An error has occured ${error}`);
     }
@@ -60,6 +61,7 @@ export default class Index extends React.Component {
             project idea!
           </p>
           <Idea idea={this.state.idea} />
+          <NewIdeaBtn generateNewIdea={this.generateNewIdea} />
         </div>
       </Layout>
     );
