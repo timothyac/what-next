@@ -37,27 +37,6 @@ const about = () => (
         submittal, but I do plan to add that at some point.
       </p>
     </div>
-    <style jsx>{`
-      .cyan {
-        color: #79ffe1;
-      }
-
-      .blue {
-        color: #0070f3;
-      }
-
-      .pink {
-        color: #f81ce5;
-      }
-
-      .purple {
-        color: #7928ca;
-      }
-
-      .orange {
-        color: #f5a623;
-      }
-    `}</style>
   </Layout>
 );
 

@@ -10,7 +10,7 @@ const Layout = props => (
     <Helmet />
     <Navbar />
     <div className="container">{props.children}</div>
-    <style jsx global>{`
+    <style global jsx>{`
       body {
         margin: 0;
         padding: 0;
@@ -32,7 +32,7 @@ const Layout = props => (
 
       p {
         margin: 0px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         font-size: 14px;
         line-height: 24px;
         color: rgb(204, 204, 204);
@@ -50,8 +50,24 @@ const Layout = props => (
         padding-top: 30px;
       }
 
-      .highlight {
-        color: #f9c80e;
+      .cyan {
+        color: #79ffe1;
+      }
+
+      .blue {
+        color: #0070f3;
+      }
+
+      .pink {
+        color: #f81ce5;
+      }
+
+      .purple {
+        color: #7928ca;
+      }
+
+      .orange {
+        color: #f5a623;
       }
 
       ::selection {
