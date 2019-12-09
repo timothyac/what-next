@@ -12,21 +12,22 @@ To generate project ideas from a list of pre-made ideas.
 
 - Generate new ideas on load
 - Generate new ideas on spacebar event
-- Pull ideas from local array
+- Pull ideas ~~from local array~~ from aws dynamo
+- About page
 
 ### Working On
 
-- About page
-- Submit page
+- Add more ideas and use a sql db
+- Submit page, for submitting new ideas
 
 ### Future
 
-- Add more ideas and use a sql db
-- Deployment to zeit
+- Deployment to zeit (buy a real domain)
 
 ## Dev
 
 - Built with [Next.js](https://nextjs.org/).
+- Built with [AWS](https://aws.amazon.com/).
 
 ### To Run
 
