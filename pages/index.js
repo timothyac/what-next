@@ -58,8 +58,7 @@ export default class Index extends React.Component {
           <h1>What Next?</h1>
           <p>
             Press <span className="orange">space</span> or
-            <span className="purple"> next</span> to generate a new project
-            idea!
+            <span className="cyan"> next</span> to generate a new project idea!
           </p>
           <Idea idea={this.state.idea} />
           <NewIdeaBtn generateNewIdea={this.generateNewIdea} />
