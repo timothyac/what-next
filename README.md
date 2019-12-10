@@ -1,10 +1,10 @@
-# what-next
+# What Next?
 
 > What next? A project idea generator!
 
-## What can it do
+## Highlights
 
-### Overall (goal)
+### Overall Goal
 
 To generate project ideas from a list of pre-made ideas.
 
