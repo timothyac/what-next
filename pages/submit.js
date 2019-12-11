@@ -9,24 +9,30 @@ const submit = () => (
           <h2>Be Concise</h2>
           <p>
             Try to summarize the point and the tools to work with. Point the
-            user in the right direction and let them discover the rest.
+            user in the right direction and let them
+            <span className="orange"> discover </span>the rest.
           </p>
         </div>
         <div className="card container">
           <h2>Be Helpful</h2>
           <p>
-            No one can predict the future, but since this site is aimed at
-            people who are just starting their careers. Let's help them discover
-            new technologies with a great community.
+            No one can predict the future, but this site is aimed at people who
+            are just starting their careers. Let's help them discover
+            <span className="cyan"> new </span>
+            technologies with a great community.
           </p>
         </div>
         <div className="card container">
           <h2>Be Original</h2>
           <p>
             Push the envelope. Create a new trend. Very easy to think up a to-do
-            app, so let's do better than that. Let's dream big and be ambitious.
+            app, so let's do better than that. Let's dream big and be
+            <span className="pink"> ambitious</span>.
           </p>
         </div>
+      </div>
+      <div className="submit-form">
+        <input></input>
       </div>
     </div>
     <style jsx>{`
@@ -44,7 +50,7 @@ const submit = () => (
         max-width: 175px;
         border: 2px solid rgb(51, 51, 51);
         border-radius: 10px;
-        padding: 2rem;
+        padding: 1rem 2rem;
         text-align: center;
       }
 
