@@ -2,7 +2,7 @@ import Layout from "../components/Layout";
 
 const about = () => (
   <Layout>
-    <div className="pt">
+    <div className="pt mb">
       <h1>What Next? A project idea generator!</h1>
       <p>
         As a younger developer, I often struggle between wanting to do cool

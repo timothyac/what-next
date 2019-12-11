@@ -50,6 +50,10 @@ const Layout = props => (
         padding-top: 30px;
       }
 
+      .mb {
+        margin-bottom: 25px;
+      }
+
       .cyan {
         color: #79ffe1;
       }

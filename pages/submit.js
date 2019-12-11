@@ -2,17 +2,17 @@ import Layout from "../components/Layout";
 
 const submit = () => (
   <Layout>
-    <div className="pt">
+    <div className="pt mb">
       <h1>What Next? Submit an idea!</h1>
       <div className="card-holder">
-        <div className="card">
+        <div className="card container">
           <h2>Be Concise</h2>
           <p>
             Try to summarize the point and the tools to work with. Point the
             user in the right direction and let them discover the rest.
           </p>
         </div>
-        <div className="card">
+        <div className="card container">
           <h2>Be Helpful</h2>
           <p>
             No one can predict the future, but since this site is aimed at
@@ -20,7 +20,7 @@ const submit = () => (
             new technologies with a great community.
           </p>
         </div>
-        <div className="card">
+        <div className="card container">
           <h2>Be Original</h2>
           <p>
             Push the envelope. Create a new trend. Very easy to think up a to-do
@@ -46,6 +46,12 @@ const submit = () => (
         border-radius: 10px;
         padding: 2rem;
         text-align: center;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .card-holder {
+          grid-template-columns: 1fr;
+        }
       }
     `}</style>
   </Layout>
