@@ -13,6 +13,7 @@ const NewIdeaBtn = props => {
         .btn {
           margin-top: 2rem;
           border: 2px solid rgb(51, 51, 51);
+          color: gray;
           border-radius: 10px;
           width: 100px;
           text-align: center;
@@ -22,6 +23,7 @@ const NewIdeaBtn = props => {
         }
 
         .btn:hover {
+          color: white;
           transition: border 0.2s ease 0s;
           border: 2px solid #fff;
           cursor: pointer;
