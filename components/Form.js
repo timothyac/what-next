@@ -21,10 +21,6 @@ class Form extends React.Component {
           <span>submit</span>
         </div>
         <style jsx>{`
-          form {
-            border: red 1px solid;
-          }
-
           input,
           textarea {
             background: black;
@@ -85,6 +81,31 @@ class Form extends React.Component {
             border: 2px solid #fff;
             color: white;
             cursor: pointer;
+          }
+
+          @media only screen and (max-width: 600px) {
+            form {
+              margin-right: auto;
+              margin-left: auto;
+              max-width: 960px;
+              padding-right: 10px;
+              padding-left: 10px;
+            }
+
+            .form-info {
+              display: grid;
+              grid-template-columns: 1fr;
+              grid-gap: 20px;
+            }
+
+            textarea {
+              margin-top: 17px;
+              width: 99%;
+            }
+
+            .btn {
+              width: 100%;
+            }
           }
         `}</style>
       </form>
