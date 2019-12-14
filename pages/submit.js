@@ -1,4 +1,5 @@
 import Layout from "../components/Layout";
+import Form from "../components/Form";
 
 const submit = () => (
   <Layout>
@@ -32,7 +33,7 @@ const submit = () => (
         </div>
       </div>
       <div className="submit-form">
-        <input></input>
+        <Form />
       </div>
     </div>
     <style jsx>{`
